@@ -8,7 +8,6 @@ export default function Home() {
       padding: "20px"
     }}>
 
-      {/* Animación CSS */}
       <style>{`
         @keyframes glow {
           0% { text-shadow: 0 0 5px red; }
@@ -16,9 +15,7 @@ export default function Home() {
           100% { text-shadow: 0 0 5px red; }
         }
 
-        .glow {
-          animation: glow 2s infinite;
-        }
+        .glow { animation: glow 2s infinite; }
 
         .card {
           background: rgba(255,0,0,0.1);
@@ -43,11 +40,29 @@ export default function Home() {
           background: darkred;
           transform: scale(1.1);
         }
+
+        .social {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .icon {
+          width: 60px;
+          height: 60px;
+          transition: 0.3s;
+        }
+
+        .icon:hover {
+          transform: scale(1.2);
+        }
       `}</style>
 
-      {/* Header */}
       <div style={{ textAlign: "center" }}>
-        <h1 className="glow" style={{ fontSize: "50px" }}>🔥 Angelfreefi0YT 🔥</h1>
+        <h1 className="glow" style={{ fontSize: "50px" }}>
+          🔥 Angelfreefi0YT 🔥
+        </h1>
         <p>Gaming • Minecraft • Retos • Edits</p>
 
         <a href="https://youtube.com/@Angelfreefi0" target="_blank">
@@ -57,36 +72,38 @@ export default function Home() {
 
       <br />
 
-      {/* Videos */}
       <div className="card">
         <h2>🎥 Videos</h2>
 
-        <iframe width="100%" height="250" src="https://www.youtube.com/embed/TU_VIDEO_1"></iframe>
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/3XUbDuSGsPo"></iframe>
         <br /><br />
-        <iframe width="100%" height="250" src="https://www.youtube.com/embed/TU_VIDEO_2"></iframe>
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/FNaKHkvm7y4"></iframe>
       </div>
 
       <br />
 
-      {/* Shorts */}
       <div className="card">
         <h2>⚡ Shorts</h2>
-        <iframe width="100%" height="250" src="https://www.youtube.com/embed/TU_SHORT"></iframe>
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/xs1gjRk_-7k"></iframe>
       </div>
 
       <br />
 
-      {/* Redes */}
       <div className="card">
         <h2>🌐 Redes</h2>
-        <p><a href="https://youtube.com/@Angelfreefi0" target="_blank">YouTube</a></p>
-        <p><a href="#">TikTok</a></p>
-        <p><a href="#">Discord</a></p>
+        <div className="social">
+          <a href="https://youtube.com/@Angelfreefi0" target="_blank">
+            <img className="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" />
+          </a>
+
+          <a href="https://discord.gg/7Svef3hB" target="_blank">
+            <img className="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" />
+          </a>
+        </div>
       </div>
 
       <br />
 
-      {/* Sobre */}
       <div className="card">
         <h2>👤 Sobre el canal</h2>
         <p>
