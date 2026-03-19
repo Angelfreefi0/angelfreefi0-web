@@ -2,20 +2,23 @@ export default function Home() {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "black",
+      backgroundColor: "black",
       color: "white",
-      fontFamily: "Arial",
-      padding: "20px",
-      textAlign: "center"
+      textAlign: "center",
+      padding: "20px"
     }}>
-
-      <h1 style={{ fontSize: "40px" }}>🔥 Angelfreefi0YT 🔥</h1>
+      
+      <h1>🔥 Angelfreefi0YT 🔥</h1>
       <p>Gaming • Minecraft • Retos</p>
 
       <br />
 
       <a href="https://youtube.com/@Angelfreefi0" target="_blank">
-        <button style={{ padding: "10px 20px", fontSize: "18px" }}>
+        <button style={{
+          padding: "10px 20px",
+          fontSize: "18px",
+          cursor: "pointer"
+        }}>
           SUSCRÍBETE
         </button>
       </a>
